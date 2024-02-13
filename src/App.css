@@ -1,38 +1,130 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
+  background-color: #fff;
+  height: 60px;
   display: flex;
-  flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
+  padding: 20px;
+}
+.navbar-left {
+  display: flex;
+  justify-content: flex-start;
+  margin-right: auto;
+}
+.navbar-text {
+  display: flex;
+  justify-content: flex-start;
+  margin-right: 900px;
+  color: #000;
+  font-size: 1.2em;
+  margin-left: auto;
+}
+
+.first_button {
+  background-color: #9c5bf4;
+  font-size: 18px;
+  border-radius: 4px;
+  padding: 9px;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-right: 5px;
+}
+.second_button {
+  font-size: 16px;
+  border-radius: 4px;
+  padding: 10px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.vdoconfbox {
+  width: 1463px;
+  height: 790px;
+  margin-top: 5px;
+  margin-left: 12px;
+  margin-right: 3px;
+  padding: 100px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border-top: #000 solid;
+  border-bottom: #000 solid;
+  border-left: #000 solid;
+  border-right: #000 solid;
 }
-
-.App-link {
-  color: #61dafb;
+.vdoconf {
+  border: thin;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer {
+  margin-top: 5px;
+  margin-bottom: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button1 {
+  background-color: #9c5bf4;
+  font-size: 25px;
+  margin-right: 15px;
+}
+.button2 {
+  font-size: 25px;
+  margin-right: 15px;
+}
+.button3 {
+  font-size: 25px;
+  margin-right: 15px;
+}
+.button4 {
+  font-size: 25px;
+  margin-right: 15px;
+}
+.button5 {
+  background-color: red;
+  font-size: 27px;
+}
+.endbutton1 {
+  color: #fff;
+  margin-top: 5px;
+  margin-left: 55px;
+  margin-right: 20px;
+  font-size: 18px;
+  width: 60px;
+}
+.endbutton2 {
+  color: #fff;
+  font-size: 18px;
+  width: 60px;
+}
+.new-page-container {
+  height: 1000px;
+  background-color: #000;
+}
+.new-page-header {
+  text-align: center;
+  color: #fff;
+  font-size: small;
+}
+.new-page-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1500px;
+  height: 500px;
+  color: #fff;
+}
+.niceday {
+  text-align: center;
+  color: grey;
+  font-weight: lighter;
+}
+.new-page-footer {
+  text-align: center;
+  color: #fff;
 }
