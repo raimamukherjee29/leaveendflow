@@ -7,8 +7,9 @@ import Screenshare from '../assets/Screen share.svg'
 import Threedots from '../assets/three dots.svg'
 import Endcall from '../assets/End call.svg'
 
-const Buttonplace = ({ onEndCallClick }) => {
+const Buttonplace = ({ onEndCallClick, onScreenShareClick }) => {
   const [showPopup, setShowPopup] = useState(false)
+  // const [isSplit, setIsSplit] = useState(false)
   return (
     <div className='footer'>
       <Button
@@ -52,7 +53,7 @@ const Buttonplace = ({ onEndCallClick }) => {
         class='btn btn-primary btn-lg'
         className='button3'
         variant='secondary'
-        onClick={() => {}}
+        onClick={onScreenShareClick}
       >
         <img
           src={Screenshare}
@@ -65,6 +66,7 @@ const Buttonplace = ({ onEndCallClick }) => {
           }}
         />
       </Button>
+      {/* {isSplit && <ScreenShare />} */}
       <Button
         type='button'
         class='btn btn-primary btn-lg'
