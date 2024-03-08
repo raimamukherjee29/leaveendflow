@@ -9,32 +9,67 @@ const Endpage = () => {
       </div>
       <div className='new-page-content'>
         <div>
-          <h1>You left the session</h1>
-          <p className='niceday'>Have a nice day!</p>
-          <br />
-          <Button
-            type='button'
-            class='btn btn-primary btn-lg'
-            className='endbutton1'
-            variant='secondary'
-            onClick={() => {}}
+          <h1 style={{ marginLeft: '20px' }}>You left the session</h1>
+          <p
+            className='niceday'
+            style={{ marginTop: '8px', marginLeft: '15px' }}
           >
-            B1
-          </Button>
+            Have a nice day!
+          </p>
+          <br />
+          <p
+            // type='button'
+            // class='btn btn-primary btn-lg'
+            //className='endbutton1'
+            //variant='secondary'
+            style={{
+              cursor: 'pointer',
+              width: '123px',
+              height: '38px',
+              color: 'grey',
+              fontSize: '15px',
+              marginLeft: '95px',
+            }}
+          >
+            Left by mistake?
+          </p>
           <Button
             type='button'
             class='btn btn-primary btn-lg'
             className='endbutton2'
             variant='secondary'
             onClick={() => {}}
+            style={{
+              cursor: 'pointer',
+              backgroundColor: '#9c5bf4',
+              borderRadius: '9px',
+              width: '123px',
+              height: '38px',
+            }}
           >
-            B2
+            Rejoin
           </Button>
         </div>
       </div>
 
       <div className='new-page-footer'>
-        <p>Copyright © Company 2024</p>
+        <Button
+          type='button'
+          class='btn  btn-lg'
+          className='feedback-btn'
+          variant='secondary'
+          onClick={() => {}}
+          style={{
+            color: 'white',
+            backgroundColor: 'black',
+            borderRadius: '9px',
+            cursor: 'pointer',
+            width: '123px',
+            height: '38px',
+          }}
+        >
+          Send Feedback
+        </Button>
       </div>
     </div>
   )

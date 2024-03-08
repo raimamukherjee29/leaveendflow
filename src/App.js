@@ -35,18 +35,41 @@ const App = () => {
               onEndCallClick={handleEndCall}
               onScreenShareClick={handleScreenShare}
             />
-          )) ||
-            (<Endpage /> && <ScreenShare />)}
+          )) || <Endpage />}
           <Popup isOpen={showPopup} handleClose={() => setShowPopup(false)}>
             <div className='popup__text'>
-              <p>Are you sure you want to end the call?</p>
+              <p style={{ paddingBottom: '2px', fontSize: '25px' }}>
+                Leave Session?
+              </p>
+              <p
+                style={{
+                  padding: '8px',
+                  fontSize: '17px',
+                  marginLeft: '-9px',
+                  color: 'grey',
+                }}
+              >
+                Others will continue after you leave.You can join the session
+                again.
+              </p>
               <button
                 onClick={() => {
                   setShowEndpage(true)
                   setShowPopup(false)
                 }}
+                style={{
+                  backgroundColor: '#d93025',
+                  color: 'white',
+                  borderRadius: '6px',
+                  width: '90px',
+                  height: '30px',
+                  marginTop: '11px',
+                  marginLeft: '1px',
+                  fontSize: '17px',
+                  cursor: 'pointer',
+                }}
               >
-                End Call
+                Leave
               </button>
             </div>
           </Popup>

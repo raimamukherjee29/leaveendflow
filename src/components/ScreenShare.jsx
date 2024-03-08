@@ -9,7 +9,32 @@ const ScreenShare = () => {
         <Navbar />
       </div>
       <div className='screen-split'>
-        <div className='left-box'>Sharing Screen</div>
+        <div className='left-box' style={{ color: 'white' }}>
+          <div>
+            You are sharing your screen
+            <button
+              style={{
+                backgroundColor: '#FF0000',
+                color: '#FFFFFF',
+                width: '160px',
+                height: '50px',
+                border: 'none',
+                borderRadius: '10px',
+                fontSize: '34px',
+                cursor: 'pointer',
+                fontSize: '20px',
+                marginTop: '20px',
+                marginLeft: '94px',
+                // marginRight: '200px',
+                alignItems: 'center',
+                display: 'block',
+              }}
+            >
+              x stop presenting
+            </button>
+          </div>
+        </div>
+
         <div className='right-box'>User</div>
       </div>
       <div style={{ marginTop: '80px' }}>
