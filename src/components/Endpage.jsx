@@ -1,12 +1,15 @@
 import React from 'react'
 import { Button } from 'react-bootstrap'
 
+const emojiUnicode = '\u{1F44B}'
+
 const Endpage = () => {
   return (
     <div className='new-page-container'>
       <div className='new-page-header'>
         <h1>Company</h1>
       </div>
+      <div className='new-page-emoji'>{emojiUnicode}</div>
       <div className='new-page-content'>
         <div>
           <h1 style={{ marginLeft: '20px' }}>You left the session</h1>
@@ -33,22 +36,21 @@ const Endpage = () => {
           >
             Left by mistake?
           </p>
-          <Button
-            type='button'
-            class='btn btn-primary btn-lg'
-            className='endbutton2'
-            variant='secondary'
-            onClick={() => {}}
-            style={{
-              cursor: 'pointer',
-              backgroundColor: '#9c5bf4',
-              borderRadius: '9px',
-              width: '123px',
-              height: '38px',
-            }}
-          >
-            Rejoin
-          </Button>
+          <a href='/'>
+            <Button
+              className='btn btn-primary btn-lg endbutton2'
+              onClick={() => {}}
+              style={{
+                cursor: 'pointer',
+                backgroundColor: '#9c5bf4',
+                borderRadius: '9px',
+                width: '123px',
+                height: '38px',
+              }}
+            >
+              Rejoin
+            </Button>
+          </a>
         </div>
       </div>
 

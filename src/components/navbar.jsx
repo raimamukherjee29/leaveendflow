@@ -6,7 +6,9 @@ import Participants from '../assets/participants.svg'
 const navbar = () => {
   return (
     <nav className='navbar navbar-left'>
-      <div className='navbar-text'>Company | Joy Banks, Iwobi (You)</div>
+      <div className='navbar-text'>
+        <b>Company </b> | Joy Banks, Iwobi (You)
+      </div>
       <div className='navbar-buttons'>
         <Button
           type='button'
@@ -25,7 +27,9 @@ const navbar = () => {
               paddingTop: '2px',
             }}
           />
-          <label style={{ fontSize: '17px', marginBottom: '10px' }}>
+          <label
+            style={{ color: 'white', fontSize: '17px', marginBottom: '10px' }}
+          >
             Start Recording
           </label>
         </Button>

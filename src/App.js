@@ -36,6 +36,7 @@ const App = () => {
               onScreenShareClick={handleScreenShare}
             />
           )) || <Endpage />}
+          {/* //problem */}
           <Popup isOpen={showPopup} handleClose={() => setShowPopup(false)}>
             <div className='popup__text'>
               <p style={{ paddingBottom: '2px', fontSize: '25px' }}>

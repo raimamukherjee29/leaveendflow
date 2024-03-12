@@ -119,7 +119,8 @@
 .endbutton2 {
   color: #fff;
   font-size: 18px;
-  width: 60px;
+  width: '123px';
+  height: '38px';
   margin-top: 5px;
   margin-left: 85px;
 }
@@ -162,6 +163,13 @@
   color: #fff;
   font-size: small;
 }
+.new-page-emoji {
+  position: relative;
+  text-align: center;
+  font-size: 5rem;
+  margin-top: 50px;
+  margin-right: 22px;
+}
 .new-page-content {
   display: flex;
   justify-content: center;
@@ -169,6 +177,7 @@
   width: 1500px;
   height: 500px;
   color: #fff;
+  margin-top: -130px;
 }
 .niceday {
   text-align: center;

@@ -9,6 +9,8 @@ import Endcall from '../assets/End call.svg'
 import HandRaise from '../assets/Hand raise.svg'
 import Left from '../assets/Left.svg'
 import Chat from '../assets/Chat.svg'
+import ScreenShareElement from './ScreenShare'
+import { Link } from 'react-router-dom'
 
 const Buttonplace = ({ onEndCallClick, onScreenShareClick }) => {
   const [showPopup, setShowPopup] = useState(false)
@@ -74,12 +76,13 @@ const Buttonplace = ({ onEndCallClick, onScreenShareClick }) => {
           }}
         />
       </Button>
+      {/* <Link to='/screenshare'> */}
       <Button
         type='button'
         class='btn btn-primary btn-lg'
         className='button3'
         variant='secondary'
-        onClick={onScreenShareClick}
+        onClick={() => {}}
         style={{ cursor: 'pointer' }}
       >
         <img
@@ -93,6 +96,7 @@ const Buttonplace = ({ onEndCallClick, onScreenShareClick }) => {
           }}
         />
       </Button>
+      {/* </Link> */}
       {/* {isSplit && <ScreenShare />} */}
       <Button
         type='button'
