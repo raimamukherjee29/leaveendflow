@@ -25,17 +25,14 @@ const App = () => {
     <>
       <Router>
         <div className='App'>
-          {!showScreenShare && !showEndpage && <Navbar />}
+          {!showEndpage && <Navbar />}
           <Routes>
             <Route path='/' element={!showEndpage && <VideoChat />} />
             {showEndpage && <Route path='/endpage' element={<Endpage />} />}
           </Routes>
-          {(!showEndpage && !showScreenShare && (
-            <Buttonplace
-              onEndCallClick={handleEndCall}
-              onScreenShareClick={handleScreenShare}
-            />
-          )) || <Endpage />}
+          {(!showEndpage && <Buttonplace onEndCallClick={handleEndCall} />) || (
+            <Endpage />
+          )}
           {/* //problem */}
           <Popup isOpen={showPopup} handleClose={() => setShowPopup(false)}>
             <div className='popup__text'>
@@ -75,10 +72,11 @@ const App = () => {
             </div>
           </Popup>
           <Routes>
-            <Route path='/' element={!showScreenShare} />
+            {/* <Route path='/' element={!showScreenShare} />
             {showScreenShare && (
               <Route path='/screenshare' element={<ScreenShare />} />
-            )}
+            )} */}
+            <Route path='/screenshare' element={<ScreenShare />} />
           </Routes>
         </div>
       </Router>

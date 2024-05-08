@@ -1,13 +1,12 @@
 import React from 'react'
-import Navbar from './navbar'
 import ButtonPlace from './Buttonplace'
 
 const ScreenShare = () => {
   return (
     <>
-      <div>
+      {/* <div>
         <Navbar />
-      </div>
+      </div> */}
       <div className='screen-split'>
         <div className='left-box' style={{ color: 'white' }}>
           <div>
